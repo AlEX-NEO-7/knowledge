@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,         /* 在TS中使用装饰器 */
+    "target":"ES2017",                      /* 编译结果为ES2017版本 */
+    "module": "commonjs",                   /* 编译目标使用的模块化标准，TS中统一用的是ES模块化标准 */
+    "lib": ["ES2017"],                      /* lib用于指定要包含在编译中的库文件 */
+    "outDir": "./dist",                     /* 编译后文件存放的位置 */
+    "strictNullChecks": true,               /* 严格检查空类型，不允许Null和Undefined赋值给其他类型 */
+    "removeComments": true,                 /* 不会把注释编译到结果里面 */
+    "esModuleInterop": true,                /* 启用es模块化交互非es模块化的导出 */
+    "moduleResolution": "node",             /* 设置模块解析策略 */
+    "strictPropertyInitialization": true,   /* 严格初始化类 */
+    "declaration": true,                    /* 生成声明文件 */
+  },
+  "include": ["./src"],                     /* 需要编译的文件夹 */
+  // "files": [],                           /* 需要编译的文件 */
+}

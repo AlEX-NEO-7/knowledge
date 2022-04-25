@@ -1,0 +1,17 @@
+# MVVM模式的理解
+MVVM全称Model-View-ViewModel是基于MVC和MVP体系结构模式的改进，MVVM就是MVC模式中的View的状态和行为抽象化，将视图UI和业务逻辑分开，更清楚地将用户界面UI的开发与应用程序中业务逻辑和行为的开发区分开来。
+
+## 描述
+MVVM模式简化了界面与业务的依赖，有助于将图形用户界面的开发与业务逻辑或数据模型的开发分离开来。在MVVM中的ViewModel作为绑定器将视图层UI与数据层Model链接起来，在Model更新时，ViewModel通过绑定器将数据更新到View，在View触发指令时，会通过ViewModel传递消息到Model，ViewModel像是一个黑盒，在开发过程中只需要关注于呈现UI的视图层以及抽象模型的数据层Model，而不需要过多关注ViewModel是如何传递的数据以及消息。
+
+## 组成
+### Model
+以面向对象来对对事物进行抽象的结果，是代表真实状态内容的领域模型。
+也可以将Model称为数据层，其作为数据中心仅关注数据本身，不关注任何行为。
+### View
+View是用户在屏幕上看到的结构、布局和外观，即视图UI。
+当Model进行更新的时候，ViewModel会通过数据绑定更新到View。
+### ViewModel
+ViewModel是暴露公共属性和命令的视图的抽象。
+ViewModel中的绑定器在视图和数据绑定器之间进行通信。
+在Model更新时，ViewModel通过绑定器将数据更新到View，在View触发指令时，会通过ViewModel传递消息到Model。

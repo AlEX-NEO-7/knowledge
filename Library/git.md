@@ -78,6 +78,21 @@ git branch -D <branch-nane>
 # 重新命名分支
 git branch -m <old-branch-name> <new-branch-name>
 ```
+### git merge
+命令用于将两个或两个以上的开发历史加入(合并)一起。
+
+#### 描述
+将来自命名提交的更改(从其历史从当前分支转移到当前分支之后)。 该命令由git pull用于合并来自另一个存储库的更改，可以手动使用将更改从一个分支合并到另一个分支。
+
+#### 示例
+1. 合并分支dev和leo在当前分支的顶部，使它们合并：
+```git merge dev leo```
+
+2. 合并dev分支到当前分支，使用ours合并策略：
+```git merge -s ours dev```
+
+3. 将分支dev合并到当前分支中，但不要自动进行新的提交：
+```git merge --no-commit dev```
 
 ### git rebase
 rebase 翻译为变基，他的作用和 merge 很相似，用于把一个分支的修改合并到当前分支上。

@@ -96,3 +96,9 @@ git branch -m <old-branch-name> <new-branch-name>
 
 ### git rebase
 rebase 翻译为变基，他的作用和 merge 很相似，用于把一个分支的修改合并到当前分支上。
+
+## 遇见的问题
+### error: failed to push some refs to 'https://github.com/AlEX-NEO-7'
+远程库与本地库不一致造成的，在hint中也有提示把远程库同步到本地库就可以了。
+#### 解决
+```git pull --rebase origin master```
